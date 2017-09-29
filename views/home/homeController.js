@@ -1,16 +1,21 @@
 cartix.controller('homeCtrl', ['$scope', '$http','$location', function($scope,$http,$location){
 
-  $(document).ready(function() {
-$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
- disableOn: 700,
- type: 'iframe',
- mainClass: 'mfp-fade',
- removalDelay: 160,
- preloader: false,
+  var section1 = angular.element(document.getElementById('bottom'));
+  $scope.toSection3 = function() {
+    $document.scrollToElementAnimated(section1);
+  }
 
- fixedContentPos: false
-});
-});
+      $(document).ready(function() {
+        $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+         disableOn: 700,
+         type: 'iframe',
+         mainClass: 'mfp-fade',
+         removalDelay: 160,
+         preloader: false,
+
+         fixedContentPos: false
+        });
+    });
 
           // Add scrollspy to <body>
           // $('body').scrollspy({target: ".navbar", offset: 50});

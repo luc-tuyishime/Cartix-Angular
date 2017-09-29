@@ -13,10 +13,10 @@
             <div class="collapse collapse-community navbar-collapse" id="myNavbar">
               <ul class="nav navbar-nav navbar-right nav-style">
                          <!-- <li><a class="large-link hide-on-small" href="index.html">home</a></li> -->
-                         <li><a class="large-link" ng-click="scrollTo('About-community')">about</a></li>
-                         <li><a class="large-link" ng-click="scrollTo('customers')">Customers</a></li>
-                         <li><a class="large-link" ng-click="scrollTo('customers')">Blog</a></li>
-                         <li><a class="large-link" ng-click="scrollTo('events')">Events</a></li>
+                         <li><a class="large-link"  du-smooth-scroll="About-community" du-scrollspy>about</a></li>
+                         <li><a class="large-link" du-smooth-scroll="customers" du-scrollspy>Customers</a></li>
+                         <li><a class="large-link" du-smooth-scroll="customers" du-scrollspy>Blog</a></li>
+                         <li><a class="large-link" du-smooth-scroll="events" du-scrollspy>Events</a></li>
                          <!-- <li><a href="#" class="btn-bottom btn-lg btn-default btn-responsive">log in</a></li> -->
                   </ul>
             </div>
@@ -33,7 +33,7 @@
            </div>
              <a class="target-scroll" href="#bottom">
                 <div class="down-arrow_2">
-                  <a href="#customers">
+                  <a class="community-down-arrow" du-smooth-scroll="customers" du-scrollspy>
                    <img src="assets/img/drop.svg" class="">
                  </a>
                 </div>

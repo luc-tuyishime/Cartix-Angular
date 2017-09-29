@@ -1,8 +1,21 @@
 cartix.controller('communityCtrl', ['$scope', '$http','$location', function($scope,$http,$location){
 
-  $scope.scrollTo = function(scrollLocation){
-    $location.hash(scrollLocation);
-    $anchorScroll();
+  // $scope.scrollTo = function(scrollLocation){
+  //   $location.hash(scrollLocation);
+  //   $anchorScroll();
+  // }
+
+  var section3 = angular.element(document.getElementById('About-community'));
+  $scope.toSection3 = function() {
+    $document.scrollToElementAnimated(section3);
+  }
+  var section4 = angular.element(document.getElementById('customers'));
+  $scope.toSection3 = function() {
+    $document.scrollToElementAnimated(section4);
+  }
+  var section5 = angular.element(document.getElementById('events'));
+  $scope.toSection3 = function() {
+    $document.scrollToElementAnimated(section5);
   }
 
   $(document).ready(function(){

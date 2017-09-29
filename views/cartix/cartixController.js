@@ -1,9 +1,28 @@
 cartix.controller('cartixCtrl', ['$scope', '$http','$anchorScroll','$location', function($scope,$http,anchorScroll,$location){
 
-  $scope.scrollTo = function(scrollLocation){
-    $location.hash(scrollLocation);
-    $anchorScroll();
-  }
+  // $scope.scrollTo = function(scrollLocation){
+  //   $location.hash(scrollLocation);
+  //   $anchorScroll();
+  // }
+  // $scope.toTheTop = function() {
+  //    $document.scrollTopAnimated(0, 5000).then(function() {
+  //      console && console.log('You just scrolled to the top!');
+  //    });
+  //  }
+   var section3 = angular.element(document.getElementById('support'));
+   $scope.toSection3 = function() {
+     $document.scrollToElementAnimated(section3);
+   }
+   var section4 = angular.element(document.getElementById('pricing'));
+   $scope.toSection3 = function() {
+     $document.scrollToElementAnimated(section4);
+   }
+   var section5 = angular.element(document.getElementById('about-cartix'));
+   $scope.toSection3 = function() {
+     $document.scrollToElementAnimated(section5);
+   }
+
+
 
   $(document).ready(function(){
           // Add scrollspy to <body>
@@ -12,7 +31,7 @@ cartix.controller('cartixCtrl', ['$scope', '$http','$anchorScroll','$location', 
          $(".bg_01").css("margin-top", $(window).height()-950);
          //  $("").css("height", function(index){
          //      return $(window).height();
-         //  })  
+         //  })
            if ( $(window).width() > 500) {
           $(".target-scroll").on('click', function(event) {
             // Make sure this.hash has a value before overriding default behavior
@@ -61,4 +80,4 @@ cartix.controller('cartixCtrl', ['$scope', '$http','$anchorScroll','$location', 
         });
       });
 
-}])
+}]).value('duScrollOffset', 30);

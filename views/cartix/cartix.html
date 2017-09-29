@@ -13,9 +13,9 @@
            <div class="collapse navbar-collapse" id="myNavbar">
               <ul class="nav navbar-nav navbar-right nav-style">
                  <!-- <li><a class="large-link hide-on-small" href="#!/cartix#about-cartix">Home</a></li> -->
-                 <li><a class="large-link" ng-click="scrollTo('about-cartix')">About</a></li>
-                 <li><a class="large-link" ng-click="scrollTo('pricing')">Pricing</a></li>
-                 <li><a class="large-link" ng-click="scrollTo('support')">Support</a></li>
+                 <li><a class="large-link" du-smooth-scroll="about-cartix" du-scrollspy>About</a></li>
+                 <li><a class="large-link" du-smooth-scroll="pricing" du-scrollspy>Pricing</a></li>
+                 <li><a class="large-link" du-smooth-scroll="support" du-scrollspy>Support</a></li>
                  <!-- <li ><a href="#" class="btn-bottom btn-lg btn-default btn-responsive">log in</a></li> -->
               </ul>
            </div>
@@ -33,7 +33,7 @@
         <!-- <img src="img/down-arrow1.png" class="down-arrow2"> -->
         <img src="assets/img/cartix-module.png" style="width:600px" class="img-responsive">
         <div class="down-arrow_2">
-         <a class="target-scroll" href="#!/#pricing">
+         <a class="target-scroll" du-smooth-scroll="pricing" du-scrollspy>
           <img src="assets/img/drop2.svg" class="down-arrow">
          </a>
         </div>
@@ -140,7 +140,7 @@
                  <div class="panel panel-default panel-bottom text-center">
                     <div class="panel-body body-3">
                        <h3 class="premium-style">PREMIUM</h3>
-                       <a href="#test-popup" data-effect="mfp-zoom-out"><button type="button" id="inline-popups" class="btn btn-primary btn-lg large2" data-toggle="modal" data-target="#demo">Contact Us</button></a>
+                       <a href="" data-effect="mfp-zoom-out"><button type="button" id="inline-popups" class="btn btn-primary btn-lg large2" data-toggle="modal" data-target="#demo">Contact Us</button></a>
                     </div>
                     <div class="panel-footer footer-1">
                        <p class="text_">Premium includes<br>  All these great features:</p>

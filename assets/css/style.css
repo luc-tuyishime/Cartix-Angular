@@ -23,6 +23,12 @@ body,html {
 p {
     font-size: 14px
 }
+.target-scroll{
+  cursor: pointer;
+}
+.community-down-arrow{
+  cursor: pointer;
+}
 
 .index-box-text {
     font-weight: 700;
@@ -696,7 +702,7 @@ a {
         background-color: #87ad5d;
 
     }
-    
+
     .moda-fade {
         margin: 5px
     }
