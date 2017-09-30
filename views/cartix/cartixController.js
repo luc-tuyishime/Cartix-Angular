@@ -1,5 +1,45 @@
 cartix.controller('cartixCtrl', ['$scope', '$http','$anchorScroll','$location', function($scope,$http,anchorScroll,$location){
 
+    $(document).ready(function() {
+      $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+       disableOn: 700,
+       type: 'iframe',
+       mainClass: 'mfp-fade',
+       removalDelay: 160,
+       preloader: false,
+
+       fixedContentPos: false
+      });
+  });
+
+$(document).ready(function() {
+  $('#contact-form').submit(function(e){
+    var firstname = document.getElementById('first-name')
+        lastname = document.getElementById('last-name')
+        email = document.getElementById('email')
+        phone = document.getElementById('phone')
+        industry = document.getElementById('industry')
+        role = document.getElementById('role')
+        organization = document.getElementById('organization')
+        comment = document.getElementById('comment')
+
+    if (!firstname.value || !lastname.value || email.value || phone.value || industry.value || role.value || organization.value || comment.value) {
+      alertify.error('PLease check your entries');
+       return false;
+    }else {
+       $.ajax({
+         method: "POST",
+         url: 'https://formspree.io/luctunechi45@gmail.com',
+         data: $('#contact-form').serialize(),
+         datatype: 'json'
+       });
+       e.preventDefault();
+       $(this).get(0).reset();
+       alertify.success('Message sent');
+    }
+  });
+});
+
   // $scope.scrollTo = function(scrollLocation){
   //   $location.hash(scrollLocation);
   //   $anchorScroll();

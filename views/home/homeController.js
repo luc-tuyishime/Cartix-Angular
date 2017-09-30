@@ -5,7 +5,7 @@ cartix.controller('homeCtrl', ['$scope', '$http','$location', function($scope,$h
     $document.scrollToElementAnimated(section1);
   }
 
-      $(document).ready(function() {
+      $(document).ready(function() { 
         $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
          disableOn: 700,
          type: 'iframe',

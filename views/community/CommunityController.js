@@ -4,6 +4,17 @@ cartix.controller('communityCtrl', ['$scope', '$http','$location', function($sco
   //   $location.hash(scrollLocation);
   //   $anchorScroll();
   // }
+  $(document).ready(function() {
+    $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+     disableOn: 700,
+     type: 'iframe',
+     mainClass: 'mfp-fade',
+     removalDelay: 160,
+     preloader: false,
+
+     fixedContentPos: false
+    });
+});
 
   var section3 = angular.element(document.getElementById('About-community'));
   $scope.toSection3 = function() {

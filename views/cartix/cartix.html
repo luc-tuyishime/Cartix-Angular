@@ -8,11 +8,11 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               </button>
-              <a href="#!/"><img src="assets/img/logo1.png" class="logo-bourgogne"></a>
+              <a href="#!/"><img src="assets/img/logo1.png" class="logo-bourgogne2"></a>
            </div>
            <div class="collapse navbar-collapse" id="myNavbar">
               <ul class="nav navbar-nav navbar-right nav-style">
-                 <!-- <li><a class="large-link hide-on-small" href="#!/cartix#about-cartix">Home</a></li> -->
+                <li><a class="large-link hide-on-small" href="index.html">Home</a></li>
                  <li><a class="large-link" du-smooth-scroll="about-cartix" du-scrollspy>About</a></li>
                  <li><a class="large-link" du-smooth-scroll="pricing" du-scrollspy>Pricing</a></li>
                  <li><a class="large-link" du-smooth-scroll="support" du-scrollspy>Support</a></li>
@@ -270,7 +270,7 @@
                  <p class="support_text">Your experience, our utmost reason of being!</p>
                  <p class="support_text">With the client being at the center of everything we do as well as being the ultimate reason we do what we do, we always strive to make your experience with Cartix hustle-free in any possible way.</p>
                  <p class="support_text">Our team is available 24 <span class="slash">/</span> 7 to assist you with any inquiry you might have with our platform as we help you have an enjoyable experience with the platform. With Cartix everybody suddenly becomes an expert in data handling ;-) </p>
-                 <p class="support_text">For personalized Inquiries e-mail us <a href="" class="link-style" data-toggle="modal" data-target="#demo">here</a>. Feel free to also visit our <a href="faq.html" class="link-style">FAQ</a> or Demo sections for more insights.
+                 <p class="support_text">For personalized Inquiries e-mail us <a href="" class="link-style" data-toggle="modal" data-target="#demo">here</a>. Feel free to also visit our <a href="#!/faq" class="link-style">FAQ</a> or Demo sections for more insights.
                  </p>
               </div>
            </div>
@@ -285,46 +285,45 @@
              <p class="modal-title">Contact Us</p>
              <p class="modal-subtitle">Please fill out the below form and we<span style="font-family:normal">'</span>ll be in touch real soon.</p><br>
 
-             <form ng-app="myApp" ng-controller="validateCtrl"  action="r" method="post" accept-charset="utf-8" class="form" role="form">
+             <form  id="contact-form">
                <div class="row input">
                    <div class="col-xs-6 col-md-6">
-                       <input type="text" class="form-control input-lg my_form" placeholder="first name" ng-model="user" required/>
+                       <input type="text" class="form-control input-lg my_form" placeholder="first name" id="first-name"/>
 
                      </div>
                    <div class="col-xs-6 col-md-6">
-                 <input type="text" class="form-control input-lg my_form" placeholder="last name" ng-model="user" required/>
+                 <input type="text" class="form-control input-lg my_form" placeholder="last name" id="last-name"/>
 
                </div>
                </div>
 
                <div class="row input">
                    <div class="col-xs-6 col-md-6">
-                       <input type="text" class="form-control input-lg my_form" placeholder="Email" ng-model="email" required/>
+                       <input type="text" class="form-control input-lg my_form" placeholder="Email" id="email"/>
 
                      </div>
                    <div class="col-xs-6 col-md-6">
-                 <input type="text" class="form-control input-lg my_form" placeholder="Phone number" ng-model="phone" required/>
+                 <input type="text" class="form-control input-lg my_form" placeholder="Phone number" id="phone"/>
 
                </div>
                </div>
                <div class="row input">
                    <div class="col-xs-6 col-md-6">
-                       <input type="text" class="form-control input-lg my_form" placeholder="Industry" ng-model="industry" required/>
+                       <input type="text" class="form-control input-lg my_form" placeholder="Industry" id="industry" />
 
                      </div>
                    <div class="col-xs-6 col-md-6">
-                 <input type="text" class="form-control input-lg my_form" placeholder="Role" ng-model="role" required/>
+                 <input type="text" class="form-control input-lg my_form" placeholder="Role" id="role"/>
 
                </div>
                </div>
-               <input type="text" name="email" value="" class="form-control input-lg input my_form" placeholder="Organization"  ng-model="organization" required/>
+               <input type="text" name="email" class="form-control input-lg input my_form" placeholder="Organization"  ng-model="organization" id="organization"/>
 
                <div class="form-group">
                <textarea class="form-control my_form" rows="5" id="comment" placeholder="Tell us how we can help you"></textarea>
              </div>
 
-             <button class="btn btn-lg btn-primary  signup-btn" type="submit">
-                   Submit</button>
+             <button class="btn btn-lg btn-primary  signup-btn" type="submit" value="Send" id="email-submit-btn">Submit</button>
              </form>
            </div>
          </div>
@@ -404,7 +403,7 @@
               <div class="col-md-3">
                  <p style="color:#757575" class="footer-link">QUICK LINKS</p>
                <a href="https://savinggroup.bnr.rw/map/sg" target="_blank"><p class="footer-link1">Saving Groups Map</p></a>
-                 <p class="footer-link1">Demo</p>
+                 <a class="popup-youtube" href="https://www.youtube.com/watch?v=kOK8EChDZhk"><p class="footer-link1">Demo</p></a>
                  <a href="#!/faq"><p class="footer-link1">FAQ</p></a>
               </div>
            </div>
@@ -457,7 +456,7 @@
               <a href="https://savinggroup.bnr.rw/map/" target="_blank">
                   <p class="footer-link1 small-view">Saving Groups Map</p>
               </a>
-              <a href="">
+              <a class="popup-youtube" href="https://www.youtube.com/watch?v=kOK8EChDZhk">
                   <p class="footer-link1 small-view">Demo</p>
               </a>
               <p class="footer-link1 small-view"><a class="small-view" href="#!/faq">FAQ</a></p>

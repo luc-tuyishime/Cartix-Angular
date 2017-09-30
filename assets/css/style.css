@@ -1,3 +1,19 @@
+/*@media screen and (max-width: 900px) {
+  .comunity-img {
+     position: relative;
+     z-index: 0 !important;
+  }
+  .bg-0002{
+    background-color: #87ad5d !important;
+    border-bottom: none;
+    box-shadow: none;
+   z-index: 0 !important;
+  }
+      }*/
+
+.navbar {
+
+}
 .group:after,
 .section {
     clear: both
@@ -5,7 +21,6 @@
 
 .calendar-svg2,
 .calendar-svg3,
-.comunity-img,
 .down-arrow,
 .download-image,
 .text2,
@@ -18,6 +33,8 @@
 body,html {
     color: #f5f6f7;
     height: 100%
+    font-size: 71%;
+    margin: 0;
 }
 
 p {
@@ -40,8 +57,8 @@ p {
 }
 
 .comunity-img {
-    bottom: 99px;
-    z-index: 200;
+   position: relative;
+    z-index: 2;
 }
 
 
@@ -115,9 +132,14 @@ p {
     -o-background-size: cover;
     background-size: cover;
     height: 100%;
-    border-radius: 0;
 
+     margin: 0 auto;
+      margin-top:0;
+      padding: 0;
+      /*width: 997px;
+      background-color:#fff;*/
 }
+
 
 
 .navbar-inner{
@@ -208,6 +230,9 @@ a:hover {
     height: 50px;
     float: left
 }
+.hide-on-small {
+    visibility: hidden
+}
 
 .exuux_location {
     font-weight: 700
@@ -234,6 +259,7 @@ a:hover {
     color: #f9a825
 }
 
+
 @media only screen and (max-width:500px) {
     .download-image {
         width: 80%;
@@ -241,8 +267,11 @@ a:hover {
     }
     .comunity-img {
         width: 100%;
-        height: auto
+        height: auto;
+        position: static;
+         z-index: 2;
     }
+
     .text-style-bottom {
         position: relative;
         top: 180px
@@ -596,6 +625,7 @@ img {
     margin: 0 auto
 }
 
+
 @media only screen and (max-width:500px) and (max-width:1024px) {
     #Layer_01,
     #Layer_02,
@@ -610,10 +640,12 @@ img {
     }
 }
 
+
 .partners-img {
     width: 100%;
     height: auto
 }
+
 
 .text2 {
     bottom: 140px;
@@ -805,16 +837,24 @@ a {
 .cartix-nav2,
 .navvv
  {
-    position:absolute;
+    /*position:absolute;
     top: 0;
-    z-index: 9999;
     width: 100%;
-    left: 0;
     background: url(../img/map2.jpg) no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover
+    background-size: cover*/
+    margin:0;
+}
+.nav{
+   margin:0;
+}
+#mainContentDiv{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
 .navbar,.navvv{
@@ -1051,11 +1091,13 @@ a {
     background-color: #87ad5d;
 
 }
+
 .bg-0002{
   background-color: #87ad5d !important;
-  z-index: 200;
+  border-bottom: none;
+  box-shadow: none;
+  z-index: 1;
 }
-
 
 .navvv {
     background: 0 0;
@@ -1140,8 +1182,13 @@ a {
 }
 
 .logo-bourgogne {
-    height: 50px
+    height: 40px
 }
+.logo-bourgogne2{
+  float: left;
+  height: 50px
+}
+
 
 .price_style2 {
     font: 15px greatests
@@ -1278,7 +1325,8 @@ textarea[placeholder]:focus {
 .navbar-default .navbar-nav>.active>.large-link:focus,
 .navbar-default .navbar-nav>.active>.large-link:hover,
 .navbar-default .navbar-nav>li>.large-link:focus,
-.navbar-default .navbar-nav>li>.large-link:hover {
+.navbar-default .navbar-nav>li>.large-link:hover,
+.navbar-default .navbar-nav>li>.large-link.active {
     color: #560034
 }
 
@@ -1289,14 +1337,25 @@ textarea[placeholder]:focus {
 .navbar-inverse .navbar-nav>li>.large-link:hover,
 .navbar-inverses .navbar-nav>.active>.large-link,
 .navbar-inverses .navbar-nav>.active>.large-link:focus,
-.navbar-inverses .navbar-nav>.active>.large-link:hover,
+.navbar-nav>.active>.large-link:hover,
 .navbar-inverses .navbar-nav>li>.large-link:focus,
-.navbar-inverses .navbar-nav>li>.large-link:hover {
-    color: #e0e0e0
+.navbar-nav>li>.large-link:hover,
+ {
+    color: #fff
+}
+.navbar-default .navbar-nav>li>.large-link.active{
+ #560034
+}
+.navbar-inverses .navbar-nav>li>.large-link.active{
+    color: #69f0ae
 }
 
 .large-link_ {
     display: none
+}
+.navbar-inverses{
+  /*background: none !important; */
+
 }
 
 .bg-002 {
