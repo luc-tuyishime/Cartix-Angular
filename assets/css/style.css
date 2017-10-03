@@ -126,12 +126,12 @@ p {
 }
 
 .bg-1 {
-    background: url(../img/map2.jpg) no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100%;
+      background: url(../img/map2.jpg) no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height: 100%;
 
      margin: 0 auto;
       margin-top:0;
@@ -1296,7 +1296,9 @@ textarea[placeholder]:focus {
     display: block;
     margin: 0 auto
 }
-
+.ladda-button{
+  font-weight: bold;
+}
 ::-webkit-input-placeholder {
     color: #fff;
     opacity: 2;

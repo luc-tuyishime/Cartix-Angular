@@ -278,57 +278,22 @@
      </div>
 
      <div class="container-fluid">
-     <div class="modal fade " id="demo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+     <div id="formBlock">
+     <div class="modal fade" id="demo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
        <div class="modal-dialog ">
          <button type="button" class="close" data-dismiss="modal"><span  aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-              <div class="row moda-fade">
+            <div  class="row moda-fade">
              <p class="modal-title">Contact Us</p>
-             <p class="modal-subtitle">Please fill out the below form and we<span style="font-family:normal">'</span>ll be in touch real soon.</p><br>
-
-             <form  id="contact-form">
-               <div class="row input">
-                   <div class="col-xs-6 col-md-6">
-                       <input type="text" class="form-control input-lg my_form" placeholder="first name" id="first-name"/>
-
-                     </div>
-                   <div class="col-xs-6 col-md-6">
-                 <input type="text" class="form-control input-lg my_form" placeholder="last name" id="last-name"/>
-
-               </div>
-               </div>
-
-               <div class="row input">
-                   <div class="col-xs-6 col-md-6">
-                       <input type="text" class="form-control input-lg my_form" placeholder="Email" id="email"/>
-
-                     </div>
-                   <div class="col-xs-6 col-md-6">
-                 <input type="text" class="form-control input-lg my_form" placeholder="Phone number" id="phone"/>
-
-               </div>
-               </div>
-               <div class="row input">
-                   <div class="col-xs-6 col-md-6">
-                       <input type="text" class="form-control input-lg my_form" placeholder="Industry" id="industry" />
-
-                     </div>
-                   <div class="col-xs-6 col-md-6">
-                 <input type="text" class="form-control input-lg my_form" placeholder="Role" id="role"/>
-
-               </div>
-               </div>
-               <input type="text" name="email" class="form-control input-lg input my_form" placeholder="Organization"  ng-model="organization" id="organization"/>
-
-               <div class="form-group">
-               <textarea class="form-control my_form" rows="5" id="comment" placeholder="Tell us how we can help you"></textarea>
-             </div>
-
-             <button class="btn btn-lg btn-primary  signup-btn" type="submit" value="Send" id="email-submit-btn">Submit</button>
-             </form>
+             <p class="modal-subtitle">Please fill out the below forms and we<span style="font-family:normal">'</span>ll be in touch real soon.</p><br>
+            <angular-formspree></angular-formspree>
            </div>
          </div>
        </div>
      </div>
+     </div>
+
+
+
      <footer  class="container-fluid bg_04 text-center">
         <div class="section-group">
           <div class="container">
@@ -402,7 +367,7 @@
               </div>
               <div class="col-md-3">
                  <p style="color:#757575" class="footer-link">QUICK LINKS</p>
-               <a href="https://savinggroup.bnr.rw/map/sg" target="_blank"><p class="footer-link1">Saving Groups Map</p></a>
+               <a href="https://savinggroup.bnr.rw/map/" target="_blank"><p class="footer-link1">Saving Groups Map</p></a>
                  <a class="popup-youtube" href="https://www.youtube.com/watch?v=kOK8EChDZhk"><p class="footer-link1">Demo</p></a>
                  <a href="#!/faq"><p class="footer-link1">FAQ</p></a>
               </div>

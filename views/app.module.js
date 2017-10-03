@@ -1,1 +1,1 @@
-var cartix = angular.module('cartix', ['ngRoute','duScroll']);
+var cartix = angular.module('cartix', ['ngRoute','duScroll','angularFormspree']);

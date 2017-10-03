@@ -8,7 +8,7 @@
              <span class="icon-bar"></span>
              <span class="icon-bar"></span>
              </button>
-             <a href="#!/"><img src="assets/img/logo1.png" class="logo-bourgogne"></a>
+             <a href="#!/"><img src="assets/img/logo1.png" class="logo-bourgogne2"></a>
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
              <ul class="nav navbar-nav navbar-right">
@@ -127,49 +127,8 @@
         <button type="button" class="close" data-dismiss="modal"><span  aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
              <div class="row moda-fade">
             <p class="modal-title">Contact Us</p>
-            <p class="modal-subtitle">Please fill out the below form and we<span style="font-family:normal">'</span>ll be in touch real soon.</p><br>
-
-            <form ng-app="myApp" ng-controller="validateCtrl"  action="r" method="post" accept-charset="utf-8" class="form" role="form">
-              <div class="row input">
-                  <div class="col-xs-6 col-md-6">
-                      <input type="text" class="form-control input-lg my_form" placeholder="first name" ng-model="user" required/>
-
-                    </div>
-                  <div class="col-xs-6 col-md-6">
-                <input type="text" class="form-control input-lg my_form" placeholder="last name" ng-model="user" required/>
-
-              </div>
-              </div>
-
-              <div class="row input">
-                  <div class="col-xs-6 col-md-6">
-                      <input type="text" class="form-control input-lg my_form" placeholder="Email" ng-model="email" required/>
-
-                    </div>
-                  <div class="col-xs-6 col-md-6">
-                <input type="text" class="form-control input-lg my_form" placeholder="Phone number" ng-model="phone" required/>
-
-              </div>
-              </div>
-              <div class="row input">
-                  <div class="col-xs-6 col-md-6">
-                      <input type="text" class="form-control input-lg my_form" placeholder="Industry" ng-model="industry" required/>
-
-                    </div>
-                  <div class="col-xs-6 col-md-6">
-                <input type="text" class="form-control input-lg my_form" placeholder="Role" ng-model="role" required/>
-
-              </div>
-              </div>
-              <input type="text" name="email" value="" class="form-control input-lg input my_form" placeholder="Organization"  ng-model="organization" required/>
-
-              <div class="form-group">
-              <textarea class="form-control my_form" rows="5" id="comment" placeholder="Tell us how we can help you"></textarea>
-            </div>
-
-            <button class="btn btn-lg btn-primary  signup-btn" type="submit">
-                  Submit</button>
-            </form>
+            <p class="modal-subtitle">Please fill out the below forms and we<span style="font-family:normal">'</span>ll be in touch real soon.</p><br>
+            <angular-formspree></angular-formspree>
           </div>
         </div>
       </div>
