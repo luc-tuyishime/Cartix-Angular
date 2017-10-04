@@ -1,5 +1,4 @@
 cartix.controller('cartixCtrl', ['$scope', '$http','$anchorScroll','$location', function($scope,$http,anchorScroll,$location){
-
     $(document).ready(function() {
       $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
        disableOn: 700,
