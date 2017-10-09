@@ -1,5 +1,11 @@
 cartix.controller('communityCtrl', ['$scope', '$http','$location', function($scope,$http,$location){
 
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)};
+  gtag('js', new Date());
+
+  gtag('config', 'UA-107520370-1');
+  
   // $scope.scrollTo = function(scrollLocation){
   //   $location.hash(scrollLocation);
   //   $anchorScroll();
