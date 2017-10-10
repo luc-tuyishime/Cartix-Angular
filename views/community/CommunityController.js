@@ -5,7 +5,7 @@ cartix.controller('communityCtrl', ['$scope', '$http','$location', function($sco
   gtag('js', new Date());
 
   gtag('config', 'UA-107520370-1');
-  
+
   // $scope.scrollTo = function(scrollLocation){
   //   $location.hash(scrollLocation);
   //   $anchorScroll();
@@ -124,5 +124,4 @@ Ladda.bind( '.progress-demo button', {
         });
        }
      });
-
 }])

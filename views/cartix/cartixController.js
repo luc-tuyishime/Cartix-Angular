@@ -126,5 +126,6 @@ cartix.controller('cartixCtrl', ['$scope', '$http','$anchorScroll','$location', 
             }
         });
       });
+    
 
 }]).value('duScrollOffset', 30);

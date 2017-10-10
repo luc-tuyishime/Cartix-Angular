@@ -126,7 +126,7 @@ p {
 }
 
 .bg-1 {
-      background: url(../img/map2.jpg) no-repeat;
+      background: url(../img/BG-GIF.gif) no-repeat;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -350,12 +350,14 @@ a:hover {
 }
 .footer-link2:hover{
   color: #fff;
+  font-weight: bold;
 }
 .home-style{
   color: #fff;
 }
 .footer-link1:hover{
-  color: #536dfe;
+  color: #880e4f;
+  font-weight: bold;
 }
 
 .faqq {
@@ -402,6 +404,11 @@ a:hover {
 @font-face {
     font-family: greatest;
     src: url(../font/Campton-BoldDEMO.otf)
+}
+
+@font-face {
+    font-family: geometos;
+    src: url(../font/Geometos.ttf)
 }
 
 @font-face {
@@ -1349,7 +1356,7 @@ textarea[placeholder]:focus {
  #560034
 }
 .navbar-inverses .navbar-nav>li>.large-link.active{
-    color: #69f0ae
+    color: #e0e0e0
 }
 
 .large-link_ {
@@ -1448,7 +1455,7 @@ main {
 }
 
 .margin {
-    font: 40px greatest
+    font: 34px geometos
 }
 
 .text-success {

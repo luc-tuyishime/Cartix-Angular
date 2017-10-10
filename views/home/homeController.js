@@ -1,7 +1,4 @@
 cartix.controller('homeCtrl', ['$scope', '$http','$location', function($scope,$http,$location){
-
-window.onresize = function(){ location.reload(); }
-
   // $('body').scrollspy({target: ".navbar", offset: 50});
   // make responsive on all screen
   $(".top-margin").css("margin-top", $(window).height()-630);
@@ -54,6 +51,13 @@ window.onresize = function(){ location.reload(); }
           //    });
           //  }
         //  window.onorientationchange = function() { location.reload() };
-
-
+     var smallScreen = false;
+     
+      window.onresize = function(){
+      if($(window).width() < 770) {
+          smallScreen= false;
+      }else {
+          location.reload();
+         }
+      }
 }])
