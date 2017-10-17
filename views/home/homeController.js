@@ -1,16 +1,20 @@
 cartix.controller('homeCtrl', ['$scope', '$http','$location', function($scope,$http,$location){
+
+
   // $('body').scrollspy({target: ".navbar", offset: 50});
   // make responsive on all screen
   $(".top-margin").css("margin-top", $(window).height()-630);
   $(".bg-1").css("height", function(index){
      return $(window).height();
-  })
+  });
 
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments)};
   gtag('js', new Date());
 
   gtag('config', 'UA-107520370-1');
+
+
 
   var section1 = angular.element(document.getElementById('bottom'));
   $scope.toSection3 = function() {
@@ -28,6 +32,14 @@ cartix.controller('homeCtrl', ['$scope', '$http','$location', function($scope,$h
          fixedContentPos: false
         });
     });
+
+    // $(window).resize(function() {
+    //    $('.data').height($(window).height() - 26);
+    //   });
+
+  // $(window).trigger('resize');
+
+
 
           // Add scrollspy to <body>
 
@@ -52,12 +64,14 @@ cartix.controller('homeCtrl', ['$scope', '$http','$location', function($scope,$h
           //  }
         //  window.onorientationchange = function() { location.reload() };
      var smallScreen = false;
-     
-      window.onresize = function(){
-      if($(window).width() < 770) {
-          smallScreen= false;
-      }else {
-          location.reload();
+
+         window.onresize = function(){
+         if($(window).width() < 770) {
+             smallScreen= false;
+         }else {
+             location.reload();
+            }
          }
-      }
-}])
+
+//
+}]);

@@ -1,5 +1,7 @@
 cartix.controller('cartixCtrl', ['$scope', '$http','$anchorScroll','$location', function($scope,$http,anchorScroll,$location){
 
+
+
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments)};
   gtag('js', new Date());
@@ -19,11 +21,12 @@ cartix.controller('cartixCtrl', ['$scope', '$http','$anchorScroll','$location', 
       });
   });
 
-  $(document).ready(function(){
-    // $('#demo').on('hidden', function () {
-    // document.location.reload();
-    // });
+  /* hide collapse after click*/
+  $('.nav a').click(function(){
+    $('.collapse').collapse('hide');
   });
+
+
 
     $(document).ready(function() {
   // Bind normal buttons
@@ -75,7 +78,7 @@ cartix.controller('cartixCtrl', ['$scope', '$http','$anchorScroll','$location', 
           // Add scrollspy to <body>
           $('body').scrollspy({target: ".navbar", offset: 50});
           // make responsive on all screen
-         $(".bg_01").css("margin-top", $(window).height()-950);
+         $(".bg_01").css("margin-top", $(window).height()-800);
          //  $("").css("height", function(index){
          //      return $(window).height();
          //  })
@@ -126,6 +129,6 @@ cartix.controller('cartixCtrl', ['$scope', '$http','$anchorScroll','$location', 
             }
         });
       });
-    
+
 
 }]).value('duScrollOffset', 30);

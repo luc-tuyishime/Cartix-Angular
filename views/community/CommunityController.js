@@ -6,6 +6,8 @@ cartix.controller('communityCtrl', ['$scope', '$http','$location', function($sco
 
   gtag('config', 'UA-107520370-1');
 
+
+
   // $scope.scrollTo = function(scrollLocation){
   //   $location.hash(scrollLocation);
   //   $anchorScroll();
@@ -22,7 +24,14 @@ cartix.controller('communityCtrl', ['$scope', '$http','$location', function($sco
     });
 });
 
+/* hide collapse after click*/
+$('.nav a').click(function(){
+  $('.collapse').collapse('hide');
+});
+
+
 $(document).ready(function() {
+  $(this).scrollTop(0);
 // Bind normal buttons
 Ladda.bind( '.button-demo button', { timeout: 2000 } );
 
@@ -60,7 +69,7 @@ Ladda.bind( '.progress-demo button', {
        // Add scrollspy to <body>
        $('body').scrollspy({target: ".navbar", offset: 50});
        // make responsive on all screen
-       $(".community-text_").css("margin-top", $(window).height()-900);
+       $(".community-text_").css("", $(window).height()-900);
        $(".bg-001").css("height", function(index){
            return $(window).height();
        })
@@ -124,4 +133,6 @@ Ladda.bind( '.progress-demo button', {
         });
        }
      });
+
+
 }])
