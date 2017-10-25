@@ -18,6 +18,9 @@
 .section {
     clear: both
 }
+.touch-footer {
+    font: 15px greatests
+}
 
 .calendar-svg2,
 .calendar-svg3,
@@ -32,12 +35,29 @@
 
 body {
     color: #f5f6f7;
-    height: 100%
-    font-size: 71%;
+    height: 100%;
     margin: 0;
     padding:0;
 
 }
+.link-white{
+    color:#fff !important!;
+}
+.link-white:visited {
+    color: #fff !important ;
+}
+.link-white:hover {
+    color: #fff !important ;
+}
+.link-white:focus {
+    color: #fff !important ;
+}
+.link-white:active {
+    color: #fff !important ;
+}
+
+a { color: inherit; }
+a:active {color:#fff;}
 
 p {
     font-size: 14px
@@ -48,35 +68,62 @@ p {
 .community-down-arrow{
   cursor: pointer;
 }
+a{
+  cursor: pointer;
+}
+.community-arrow-size{
+  height: 6.5vh
+}
 
 .index-box-text {
     font-weight: 700;
-    padding-top: 130px;
-    /*position:relative;
-   display:inline-block;*/
-   /*top:50%;
-   transform:translateY(-50%);*/
+    margin-top: 15rem;
+
+
+
 }
 
-@media only screen and (min-width: 768px) and (max-width:1366px) {
+@viewport {
+   orientation: portrait;
+ }
+
+/*@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  .display-bottom{
+    display: none !important;
+  }
+}*/
+
+@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) {
   .index-box-text {
       font-weight: 700;
-      margin-top: 105px;
+      margin-top: 15rem;
       /*position:relative;
      display:inline-block;*/
      /*top:50%;
      transform:translateY(-50%);*/
   }
+
+  /*.bounce2{
+    position: absolute !important;
+     bottom: 120px !important;
+     right: 2% !important;
+  }*/
+
   .touch-footer {
-      font: 1.20vh greatests
+      /*font: 1.20vh greatests*/
   }
   .class1 {
       font: 1.25vh exuus
   }
   .price-style {
-      font: 3vh greatest !important;
-      font-family: sans-serif
+      /*font: 3vh greatest !important;
+      font-family: sans-serif*/
+      font-size: 12px "greatests";
   }
+}
+
+@media only screen and (min-width: 768px) and (max-width:1366px) {
+
 }
 
 .adresse {
@@ -85,7 +132,7 @@ p {
 
 .comunity-img {
     z-index: 2;
-    width: 100%;
+    width: 64vh;
 }
 .down-arrow_2{
   padding-bottom: 65px;
@@ -111,7 +158,7 @@ p {
     padding-top: 10px
 }
 .cartix-padding{
-  /*padding-top: 30px;*/
+  margin-top: 5rem;
 }
 
 .navbar {
@@ -141,7 +188,7 @@ p {
 
 }
 .style-bottom{
-  margin-bottom: 30px;
+  /*margin-bottom: 30px;*/
 }
 
 .style-login {
@@ -178,9 +225,12 @@ p {
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
-      height: 100%;
 
-     margin: 0 auto;
+      /*width: 100vw;*/
+      height: 100vh;
+
+      /*height: 100%;*/
+      margin: 0 auto;
       margin-top:0;
       padding: 0;
       /*width: 997px;
@@ -282,14 +332,20 @@ a:hover {
     visibility: hidden
 }
 
+.location {
+  overflow: auto;
+}
+
 .exuux_location {
-    font-weight:700;
-    /*font-size: 2.00vh*/
+    font-weight: bold;
+    font-size: 2.00vh;
+
 }
 
 .exuux_location2 {
     font-weight: 400;
-    font-size: 1.20vh
+    font-size: 1.50vh;
+
 }
 
 .location-img {
@@ -297,12 +353,37 @@ a:hover {
 }
 
 .coming-soon-text {
-    margin-top: 35px;
-    font: 2.50vh greatests
+    margin-top: 60px;
+    font: 2.50vh greatests;
+    text-align: center;
+    /*display: inline-block;*/
+
+    /*position: absolute;
+    top: 0px;
+     width:100%;
+     left:0;*/
+    /*left: 0px;
+    width: 100%;
+    color:#fff;
+    position:absolute; */
 }
 
+.download-apple {
+    /*max-height: 25vh;*/
+  width: 40vh;
+
+  /*position: absolute;
+  top: 50%;
+  left: 50%;*/
+
+}
+
+
+
+
 .coming-soon-text2 {
-    font: 30px greatest;
+  text-align: center;
+    font: 4vh greatest;
     margin-top: 110px;
     margin-bottom: 30px;
     color: #f9a825
@@ -317,7 +398,7 @@ a:hover {
     .home-icon{
       width: 100%;
       height: auto;
-      padding-top: 120px;
+      margin-top: 10rem;
 
     }
     .comunity-img {
@@ -359,9 +440,9 @@ a:hover {
     font-size: 2vh
 }
 
-.download-image {
+/*.download-image {
     bottom: 13px
-}
+}*/
 
 .btn-login {
     color: #333;
@@ -378,8 +459,8 @@ a:hover {
 }
 
 .down-arrow {
-    height: 45px;
-    top: 30px
+    height: 6vh;
+    margin-top: 3rem;
 }
 
 .kiwi1,
@@ -394,25 +475,29 @@ a:hover {
     color: #fff
 }
 
-.download-apple {
-    /*max-height: 25vh;*/
-  width: 25vw;
-}
+
 
 .footer-link1 {
     text-align: justify;
     color: #9e9e9e;
-    /*font: 2vh greatests*/
+    font: 15px greatests;
 }
 .footer-link2 {
     text-align: justify;
     color: #9e9e9e;
+    color: inherit;
     font: 14px greatests
+}
+.footer-link2:active{
+  color: #9e9e9e;
 }
 .footer-link2:hover{
   color: #fff;
   font-weight: bold;
 }
+a { color: inherit; }
+a:active {color:#fff;}
+
 .home-style{
   color: #fff;
 }
@@ -429,7 +514,8 @@ a:hover {
     font: 2.30vh greatests
 }
 
-
+a { color: inherit; }
+a:active {color:#fff;}
 
 @media only screen and (max-width:500px) {
   .download-apple {
@@ -440,12 +526,12 @@ a:hover {
       font: 2.70vh greatests
   }
   .touch-footer {
-      font: 2vh greatests
+      font: 3.0vw greatests
   }
   .footer-link1 {
       text-align: justify;
       color: #9e9e9e;
-      font: 2vh greatests
+      font: 3vw greatests
   }
 }
 
@@ -498,7 +584,7 @@ a:hover {
 }
 
 .class1 {
-    font: 1.90vh exuus
+    font: 14px exuus
 }
 
 .opostrophe {
@@ -516,7 +602,7 @@ a:hover {
 }
 
 .large-link {
-    font: 17px greatest;
+    font: 2.30vh greatest;
     line-height: 18px!important
 }
 
@@ -687,14 +773,49 @@ a:hover {
 }
 
 .bounce2 {
-    padding-top: 35%;
+
     display: block;
 }
+.display-bottom{
+  /*margin-top: 15rem;*/
+  position: absolute;
+   /*bottom: 95px;*/
+   /*left: 40%;*/
+   margin: 0 auto;
+   display: block;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
 
-@media(min-height:20px) and (max-height:650px)
+.btn-bot{
+   position:absolute;
+   /*margin-left:-50px;
+   left:50%;
+   width:100px;
+   bottom:95px;*/
+   bottom: 95px;
+    width:100%;
+    left:0;
+}
+
+.bounce2{
+  position: absolute;
+   bottom: 87px;
+   right: 2%;
+}
+
+@media(min-height:20px) and (max-height:550px)
 
 {
    .bounce{
+     display: none;
+   }
+   .bounce2{
+     display: none;
+   }
+   .coming-soon-text{
+     display: none;
+   }
+   .download-apple{
      display: none;
    }
  }
@@ -704,14 +825,15 @@ a:hover {
 }
 
 .bounce{
-  height: 50px;
+  height: 6vh;
 }
 
 .data{
   height: 100vh;
-  /*display: block;
-  position: relative;*/
+  text-align:center;
+
 }
+
 
 .social-network-icon {
     max-height: 30px;
@@ -826,7 +948,7 @@ a {
         margin-top: 15px
     }
     .index-box-text {
-        padding-top:130px;
+        margin-top: 10rem;
     }
     a {
         color: #fff
@@ -890,6 +1012,8 @@ a {
     }
 }
 
+
+
 @media only screen and (max-width:732px)  {
     .down-arrow_2,
     .down_arrow,
@@ -901,7 +1025,7 @@ a {
         margin-top: 15px
     }
     .index-box-text {
-        padding-top: 10px
+        margin-top: 10rem;
     }
     a {
         color: #fff
@@ -910,8 +1034,7 @@ a {
         color: #000
     }
     .coming-soon-text {
-        position: relative;
-        bottom: 60px
+      margin-top: 60px;
     }
     .data {
         position: relative;
@@ -1115,7 +1238,7 @@ a {
 }
 
 .pricing-detail {
-    padding-top: 100px
+    padding-top: 80px
 }
 
 .col-centered {
@@ -1165,13 +1288,18 @@ a {
 }
 
 .price-style {
-    font: 6vh greatest;
-    font-family: sans-serif
+    /*font: 2.5vh greatests;*/
+    /*font-family: sans-serif*/
+    font-size: 12px "greatests";
 }
 
-/*.price-style2 {
-    font-size: 6vh
-}*/
+.dollar-sign-style{
+  font-size: 5.5vh;
+}
+
+.price-style2 {
+    font: 6.5vh "greatests";
+}
 
 .text_ {
     margin-top: 23px;
@@ -1310,6 +1438,10 @@ a {
 #about {
     background-color: #F6F1F4
 }
+#About {
+    background-color: #F6F1F4
+}
+
 
 .bg-3 {
     background-color: #560034;
@@ -1317,7 +1449,7 @@ a {
 }
 
 .logo-bourgogne {
-  height: 6vh;
+  width: 15vh;
   padding: 9px;
 }
 .logo-bourgogne2{
@@ -1328,7 +1460,7 @@ a {
 
 
 .price_style2 {
-    font: 15px greatests
+    font: 2vh greatests
 }
 
 .modal.fade .modal-dialog {
@@ -1485,7 +1617,7 @@ textarea[placeholder]:focus {
 .navbar-default .navbar-nav>li>.large-link.active{
  #560034
 }
-.navbar-inverses .navbar-nav>li>.large-link.active{
+.navbar-inverses .navbar-nav>li>a>.large-link.active{
     color: #e0e0e0
 }
 
@@ -1673,8 +1805,8 @@ main {
 }
 
 .community-div{
-  position: relative;
-  bottom: 35px;
+  /*position: relative;
+  bottom: 35px;*/
 }
 
 .support-img{
@@ -1687,4 +1819,49 @@ main {
 }
 .support{
   font: 4.50vh "greatest";
+}
+
+/*#landscape{
+         position: absolute;
+         top: 0px;
+         left: 0px;
+         background: #000000;
+         width: 100%;
+         height: 100%;
+         display: none;
+         z-index: 20000;
+         opacity: 0.9;
+         margin:0 auto;
+}*/
+#landscape {
+
+        color: #000000;
+        opacity: 1;
+        top: 50%;
+        font: 3vw "greatests";
+        position: fixed;
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+}
+
+#landscape{
+  visibility: hidden;
+}
+
+/*Land scape style*/
+@media screen and (min-width:320px) and (max-width:767px) and (orientation:landscape) {
+
+body{
+  visibility:hidden;
+}
+
+#landscape{
+  visibility: visible!important;
+   }
+}
+
+
+@media screen and (min-width:768px) and (max-width:1024px) and (orientation:landscape){
+ /*tablets*/
 }

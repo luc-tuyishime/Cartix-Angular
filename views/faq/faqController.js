@@ -1,11 +1,11 @@
-cartix.controller('faqCtrl', ['$scope', '$http','$anchorScroll','$location', function($scope,$http,anchorScroll,$location){
+cartix.controller('faqCtrl', ['$scope', '$http','$anchorScroll','$location', function($scope,$http,$anchorScroll,$location){
 
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments)};
   gtag('js', new Date());
 
   gtag('config', 'UA-107520370-1');
-  
+
     $(document).ready(function() {
       $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
        disableOn: 700,
@@ -19,6 +19,7 @@ cartix.controller('faqCtrl', ['$scope', '$http','$anchorScroll','$location', fun
   });
 
   $(document).ready(function() {
+  $(this).scrollTop(0);
 // Bind normal buttons
   Ladda.bind( '.button-demo button', { timeout: 2000 } );
 

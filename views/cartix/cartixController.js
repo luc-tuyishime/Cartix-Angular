@@ -1,4 +1,4 @@
-cartix.controller('cartixCtrl', ['$scope', '$http','$anchorScroll','$location', function($scope,$http,anchorScroll,$location){
+cartix.controller('cartixCtrl', ['$scope', '$http','$anchorScroll','$location','$document', function($scope,$http,anchorScroll,$location,$document){
 
 
 
@@ -59,16 +59,23 @@ cartix.controller('cartixCtrl', ['$scope', '$http','$anchorScroll','$location', 
   //      console && console.log('You just scrolled to the top!');
   //    });
   //  }
+
+  $scope.toTheTop = function() {
+     $document.scrollTopAnimated(0, 5000).then(function() {
+       console && console.log('You just scrolled to the top!');
+     });
+   }
+
    var section3 = angular.element(document.getElementById('support'));
    $scope.toSection3 = function() {
      $document.scrollToElementAnimated(section3);
    }
-   var section4 = angular.element(document.getElementById('pricing'));
-   $scope.toSection3 = function() {
+   var section4 = angular.element(document.getElementById('Pricing'));
+   $scope.toSection4 = function() {
      $document.scrollToElementAnimated(section4);
    }
-   var section5 = angular.element(document.getElementById('about-cartix'));
-   $scope.toSection3 = function() {
+   var section5 = angular.element(document.getElementById('aboutcartix'));
+   $scope.toSection5 = function() {
      $document.scrollToElementAnimated(section5);
    }
 
@@ -78,7 +85,7 @@ cartix.controller('cartixCtrl', ['$scope', '$http','$anchorScroll','$location', 
           // Add scrollspy to <body>
           $('body').scrollspy({target: ".navbar", offset: 50});
           // make responsive on all screen
-         $(".bg_01").css("margin-top", $(window).height()-800);
+         $(".bg_01").css("margin-top", $(window).height()-810);
          //  $("").css("height", function(index){
          //      return $(window).height();
          //  })

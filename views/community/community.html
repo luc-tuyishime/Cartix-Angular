@@ -1,3 +1,4 @@
+<div id="landscape">Rotate Device to Portrait</div>
 <!-- Navbar -->
     <div class="text-center " id="About-community"  ng-controller="communityCtrl">
     <div class="bg-001 mainContentDiv">
@@ -31,14 +32,12 @@
         <div class="community-text_">
           <div class="container">
             <div class="row">
-            <div class="col-md-6 col-md-offset-3">
            <img src="assets/img/community.png" class="comunity-img">
-         </div>
        </div>
-      </div>
 
 
-       <div class="container style-bottom">
+
+       <div class="style-bottom">
         <div class="row">
         <div class="community-div">
        <h1 class="comunnity-text text-center">Community</h1>
@@ -47,12 +46,13 @@
        <a class="target-scroll" href="#bottom">
           <div class="down-arrow_2">
             <a class="community-down-arrow" du-smooth-scroll="customers" du-scrollspy>
-             <img src="assets/img/drop.svg" class="">
+             <img src="assets/img/drop.svg" class="community-arrow-size">
            </a>
           </div>
        </a>
       </div>
      </div>
+    </div>
     </div>
   </div>
 </div>
@@ -119,7 +119,7 @@
                    <p class="touch-footer" style="color:#9e9e9e">Get in touch with us</p>
                    <a href="https://twitter.com/Cartix_io" target="_blank">
                       <svg version="1.1" id="Twitter_w_x2F__circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                         x="0px" y="0px" height="3.30vh"  viewBox="0 0 20 20" fill="black" enable-background="new 0 0 49 49" xml:space="preserve">
+                         x="0px" y="0px"  width="25px" height="30px"  viewBox="0 0 20 20" fill="black" enable-background="new 0 0 49 49" xml:space="preserve">
                          <g>
                             <g>
                                <path d="M10,0.4c-5.302,0-9.6,4.298-9.6,9.6s4.298,9.6,9.6,9.6s9.6-4.298,9.6-9.6S15.302,0.4,10,0.4z M13.905,8.264
@@ -136,7 +136,7 @@
                    </a>
                    <a href="https://www.facebook.com/cartixIO/" target="_blank">
                       <svg version="1.1" id="Facebook_w_x2F__circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                         x="0px" y="0px" height="3.30vh" viewBox="0 0 20 20" fill="black" enable-background="new 0 0 20 20" xml:space="preserve">
+                         x="0px" y="0px"  width="25px" height="30px" viewBox="0 0 20 20" fill="black" enable-background="new 0 0 20 20" xml:space="preserve">
                          <g>
                             <g>
                                <path d="M10,0.4c-5.302,0-9.6,4.298-9.6,9.6s4.298,9.6,9.6,9.6s9.6-4.298,9.6-9.6S15.302,0.4,10,0.4z M12.274,7.034h-1.443
@@ -148,7 +148,7 @@
                    </a>
                    <a href="https://www.youtube.com/channel/UCTEgaTJzLDk1uBw28ZEYynQ/videos" target="_blank">
                       <svg version="1.1" id="Youtube_w_x2F__circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                         x="0px" y="0px" height="3.30vh" viewBox="0 0 20 20" fill="black" enable-background="new 0 0 20 20" xml:space="preserve">
+                         x="0px" y="0px"  width="25px" height="30px" viewBox="0 0 20 20" fill="black" enable-background="new 0 0 20 20" xml:space="preserve">
                          <g>
                             <g>
                                <path d="M11.603,9.833L9.357,8.785C9.161,8.694,9,8.796,9,9.013v1.974c0,0.217,0.161,0.319,0.357,0.228l2.245-1.048
@@ -164,17 +164,17 @@
              <div class="footer-hide">
              <div class="col-md-2">
                 <p style="color:#757575" class="footer-link">CARTIX</p>
-                <a href="#!/cartix#about-cartix"><p class="footer-link1">About</p></a>
-                <a href="#!/cartix#pricing"><p class="footer-link1">Pricing</p></a>
+                <a href="#!/cartix#aboutcartix"><p class="footer-link1">About</p></a>
+                <a href="#!/cartix#Pricing"><p class="footer-link1">Pricing</p></a>
                 <a href="#!/cartix#support"><p class="footer-link1">Support</p></a>
 
              </div>
              <div class="col-md-2">
                 <p style="color:#757575" class="footer-link">COMMUNITY</p>
-                <a href="#!/community#About-community"><p class="footer-link1">About</p></a>
-                <a href="#!/community#customers"><p class="footer-link1">Customers</p></a>
+                <a ng-click="toSection3()"><p class="footer-link1">About</p></a>
+                <a ng-click="toSection4()"><p class="footer-link1">Customers</p></a>
                 <a href="https://blog.cartix.io/" target="_blank"><p class="footer-link1">Blog</p></a>
-                <a href="#!/community#events"><p class="footer-link1">Event</p></a>
+                <a ng-click="toSection5()"><p class="footer-link1">Event</p></a>
              </div>
              <div class="col-md-2">
                 <p style="color:#757575"  class="footer-link">LEGAL</p>
@@ -184,7 +184,7 @@
              </div>
              <div class="col-md-2">
                 <p style="color:#757575"  class="footer-link">QUICK LINKS</p>
-              <a href="https://savinggroup.bnr.rw/map/" target="_blank"><p class="footer-link1">Saving Groups Map</p></a>
+              <a href="https://savinggroup.bnr.rw/" target="_blank"><p class="footer-link1">Saving Groups Map</p></a>
                 <a class="popup-youtube" href="https://www.youtube.com/watch?v=kOK8EChDZhk"><p class="footer-link1">Demo</p></a>
                 <a href="#!/faq"><p class="footer-link1">FAQ</p></a>
              </div>
@@ -198,8 +198,8 @@
          <div id="demo1" class="collapse">
            <div class="panel-body body-style2">
              <!-- <p class="footer-link "><a class="small-view" href="cartix.html">CARTIX</a></p> -->
-             <a href="#!/cartix#about-cartix"><p class="footer-link1 small-view">About</p></a>
-             <a href="#!/cartix#pricing"><p class="footer-link1 small-view">Pricing</p></a>
+             <a href="#!/cartix#aboutcartix"><p class="footer-link1 small-view">About</p></a>
+             <a href="#!/cartix#Pricing"><p class="footer-link1 small-view">Pricing</p></a>
              <a href="#!/cartix#support"><p class="footer-link1 small-view">Support</p></a>
 
            </div>
@@ -210,10 +210,10 @@
          <div id="demo2" class="collapse">
            <div class="panel-body body-style2">
              <!-- <p class="footer-link small-view"><a class="small-view" href="community.html">COMMUNITY</a></p> -->
-             <a href="#!/community#About-community"><p class="footer-link1 small-view">About</p></a>
-             <a href="#!/community#customers"><p class="footer-link1 small-view">Customers</p></a>
-              <a href="https://blog.cartix.io/" target="_blank"><p class="footer-link1 small-view">Blog</p></a>
-             <a href="#!/community#events"><p class="footer-link1 small-view">Event</p></a>
+             <a ng-click="toSection3()"><p class="footer-link1 small-view">About</p></a>
+             <a ng-click="toSection4()"><p class="footer-link1 small-view">Customers</p></a>
+             <a href="https://blog.cartix.io/" target="_blank"><p class="footer-link1 small-view">Blog</p></a>
+             <a ng-click="toSection5()"><p class="footer-link1 small-view">Event</p></a>
            </div>
          </div>
        </div>
@@ -234,7 +234,7 @@
          <div id="demo4" class="collapse">
            <div class="panel-body body-style2">
              <!-- <p class="footer-link_ small-view">QUICK LINKS</p> -->
-             <a href="https://savinggroup.bnr.rw/map/" target="_blank">
+             <a href="https://savinggroup.bnr.rw/" target="_blank">
                  <p class="footer-link1 small-view">Saving Groups Map</p>
              </a>
              <a class="popup-youtube" href="https://www.youtube.com/watch?v=kOK8EChDZhk">

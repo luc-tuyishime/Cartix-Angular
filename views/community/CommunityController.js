@@ -1,11 +1,29 @@
-cartix.controller('communityCtrl', ['$scope', '$http','$location', function($scope,$http,$location){
+cartix.controller('communityCtrl', ['$scope', '$http','$anchorScroll','$location','$document', function($scope,$http,$anchorScroll,$location,$document){
+
+  $scope.toTheTop = function() {
+     $document.scrollTopAnimated(0, 5000).then(function() {
+       console && console.log('You just scrolled to the top!');
+     });
+   }
+
+  var section3 = angular.element(document.getElementById('About-community'));
+  $scope.toSection3 = function() {
+    $document.scrollToElementAnimated(section3);
+  }
+  var section4 = angular.element(document.getElementById('customers'));
+  $scope.toSection4 = function() {
+    $document.scrollToElementAnimated(section4);
+  }
+  var section5 = angular.element(document.getElementById('events'));
+  $scope.toSection5 = function() {
+    $document.scrollToElementAnimated(section5);
+  }
 
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments)};
   gtag('js', new Date());
 
   gtag('config', 'UA-107520370-1');
-
 
 
   // $scope.scrollTo = function(scrollLocation){
@@ -52,24 +70,13 @@ Ladda.bind( '.progress-demo button', {
 } );
 });
 
-  var section3 = angular.element(document.getElementById('About-community'));
-  $scope.toSection3 = function() {
-    $document.scrollToElementAnimated(section3);
-  }
-  var section4 = angular.element(document.getElementById('customers'));
-  $scope.toSection3 = function() {
-    $document.scrollToElementAnimated(section4);
-  }
-  var section5 = angular.element(document.getElementById('events'));
-  $scope.toSection3 = function() {
-    $document.scrollToElementAnimated(section5);
-  }
+
 
   $(document).ready(function(){
        // Add scrollspy to <body>
        $('body').scrollspy({target: ".navbar", offset: 50});
        // make responsive on all screen
-       $(".community-text_").css("", $(window).height()-900);
+       $(".community-text_").css("", $(window).height()-850);
        $(".bg-001").css("height", function(index){
            return $(window).height();
        })

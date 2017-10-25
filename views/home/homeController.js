@@ -1,12 +1,18 @@
-cartix.controller('homeCtrl', ['$scope', '$http','$location', function($scope,$http,$location){
+cartix.controller('homeCtrl', ['$scope', '$http','$anchorScroll','$location', function($scope,$http,$anchorScroll,$location){
 
+
+
+  // window.addEventListener('onorientationchange',function(){
+  //   console.log('orientation change');
+  // },false)
 
   // $('body').scrollspy({target: ".navbar", offset: 50});
   // make responsive on all screen
-  $(".top-margin").css("margin-top", $(window).height()-630);
-  $(".bg-1").css("height", function(index){
-     return $(window).height();
-  });
+  $(".top-margin").css("margin-top","height", $(window).height());
+    // $(".bg-1").css("height", function(index){
+    //    return $(window).height();
+    // });
+
 
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments)};
@@ -73,5 +79,6 @@ cartix.controller('homeCtrl', ['$scope', '$http','$location', function($scope,$h
             }
          }
 
-//
+
+
 }]);
