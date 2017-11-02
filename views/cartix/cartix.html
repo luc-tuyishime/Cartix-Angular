@@ -9,7 +9,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               </button>
-              <a href="#!/"><img src="assets/img/logo1.png" class="logo-bourgogne2"></a>
+              <a href="#!/"><img src="assets/img/logo1.png" class="img-responsive logo-bourgogne2"></a>
            </div>
            <div class="collapse navbar-collapse" id="myNavbar">
               <ul class="nav navbar-nav navbar-right nav-style">
@@ -23,7 +23,7 @@
         </div>
      </nav>
      <!-- First Container -->
-     <div class="container-fluid bg_01 text-center" id="aboutcartix">
+     <section class="container-fluid bg_color text-center" id="aboutcartix">
         <div class="container">
         <div class="row cartix-padding">
         <img src="assets/img/homeicon.svg" class="home-icon">
@@ -37,17 +37,17 @@
       </div>
        <div class="row">
         <!-- <img src="img/down-arrow1.png" class="down-arrow2"> -->
-        <img src="assets/img/cartix-module.png" style="width:80vh" class="img-responsive">
+        <img src="assets/img/cartix-module.png" style="width:645px" class="img-responsive">
         <div class="down-arrow_2">
-         <a class="target-scroll" du-smooth-scroll="Pricing" du-scrollspy>
+         <a class="target-scroll" ng-click="toSection4()">
           <img src="assets/img/drop2.svg" class="down-arrow">
          </a>
         </div>
+       </div>
       </div>
-    </div>
-     </div>
+    </section>
      <!-- Second Container -->
-     <div class="container-fluid bg_02 text-center" id="Pricing">
+     <section id="Pricing" class="container-fluid bg_02 text-center">
        <div class="container">
        <div class="row">
          <h1 style="color:#757575;margin-top:75px;font-weight:bold;" class="pricing">Our pricing</h1>
@@ -99,7 +99,7 @@
                     <div class="panel-body body-2">
                        <h3 class="standard-style">STANDARD</h3>
                        <p class="price-style"><span class="dollar-sign-style">$</span><span class="price-style2">299</span><span class="price_style2">Per month</span></p>
-                       <button type="button" class="btn btn-default btn-lg large" data-toggle="modal" data-target="#demo">Contact Us</button>
+                       <button type="button" class="btn btn-default btn-lg large" data-toggle="modal" data-target="#demo22">Contact Us</button>
                     </div>
                     <div class="panel-footer footer-1">
                        <p class="text_">Standard includes<br>  All these great features  (Free 30 Days Trial):</p>
@@ -147,7 +147,7 @@
                  <div class="panel panel-default panel-bottom text-center">
                     <div class="panel-body body-3">
                        <h3 class="premium-style">PREMIUM</h3>
-                       <a href="" data-effect="mfp-zoom-out"><button type="button" id="inline-popups" class="btn btn-primary btn-lg large2" data-toggle="modal" data-target="#demo">Contact Us</button></a>
+                       <a href="" data-effect="mfp-zoom-out"><button type="button" id="inline-popups" class="btn btn-primary btn-lg large2" data-toggle="modal" data-target="#demo22">Contact Us</button></a>
                     </div>
                     <div class="panel-footer footer-1">
                        <p class="text_">Premium includes<br>  All these great features:</p>
@@ -187,9 +187,9 @@
             </div>
            </div>
           </div>
-         </div>
+        </section>
      <!-- Third Container (Grid) -->
-     <div class="container-fluid bg_3" id="support">
+     <section class="container-fluid bg_3" id="support">
         <div class="container">
            <div class="row">
               <div class="col-md-6 text-center">
@@ -274,7 +274,7 @@
                  </svg>
                </div>
               </div>
-              <div class="col-md-6 support-div  text-center">
+              <div class="col-md-6  support-div  text-center">
                 <h1 style="font-weight:bold;" class="support">Support</h1>
                 <div class="justify-centered">
                  <p class="support_text ">Your experience, our utmost reason of being!</p>
@@ -286,7 +286,7 @@
               </div>
            </div>
         </div>
-     </div>
+     </section>
 
      <div class="container-fluid">
      <div id="formBlock">
@@ -300,6 +300,17 @@
            </div>
          </div>
        </div>
+
+         <div class="modal fade" id="demo22" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+           <button type="button" class="close" data-dismiss="modal"><span  aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <div  class="row moda-fade">
+               <p class="modal-title">Contact Us</p>
+               <p class="modal-subtitle">Please fill out the below forms and we<span style="font-family:normal">'</span>ll be in touch real soon.</p><br>
+              <angular-formspree2></angular-formspree2>
+             </div>
+           </div>
+         </div>
      </div>
      </div>
 
@@ -308,7 +319,7 @@
           <div class="container">
            <div class="row">
               <div class="icons-justify">
-                 <div class="col-md-3">
+                 <div class="col-sm-3">
                     <p class="touch-footer" style="color:#9e9e9e">Get in touch with us</p>
                     <a href="https://twitter.com/Cartix_io" target="_blank">
                        <svg version="1.1" id="Twitter_w_x2F__circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -356,29 +367,29 @@
               </div>
 
              <div class="footer-hide">
-              <div class="col-md-2">
+              <div class="col-sm-2">
                  <p style="color:#757575" class="footer-link">CARTIX</p>
                     <a ng-click="toSection5()"><p class="footer-link1">About</p></a>
                     <a ng-click="toSection4()"><p class="footer-link1">Pricing</p></a>
                     <a ng-click="toSection3()"><p class="footer-link1">Support</p></a>
               </div>
-              <div class="col-md-2">
+              <div class="col-sm-2">
                  <p style="color:#757575"  class="footer-link">COMMUNITY</p>
-                 <a href="#!/community#About-community"><p class="footer-link1">About</p></a>
-                 <a href="#!/community#customers"><p class="footer-link1">Customers</p></a>
-                 <a href="https://blog.cartix.io/" target="_blank"><p class="footer-link1">Blog</p></a>
-                 <a href="#!/community#events"><p class="footer-link1">Event</p></a>
+                 <a ng-href="#!/community#About-community"><p class="footer-link1">About</p></a>
+                 <a ng-href="#!/community#customers"><p class="footer-link1">Customers</p></a>
+                 <a ng-href="https://blog.cartix.io/" target="_blank"><p class="footer-link1">Blog</p></a>
+                 <a ng-href="#!/community#events"><p class="footer-link1">Event</p></a>
               </div>
-              <div class="col-md-2">
+              <div class="col-sm-2">
                  <p style="color:#757575"  class="footer-link">LEGAL</p>
-                 <a href="#!/privacy"><p class="footer-link1">Privacy Policy</p></a>
-                 <a href="#!/terms"><p class="footer-link1">Terms of Use</p></a>
+                 <a ng-href="#!/privacy"><p class="footer-link1">Privacy Policy</p></a>
+                 <a ng-href="#!/terms"><p class="footer-link1">Terms of Use</p></a>
               </div>
-              <div class="col-md-2">
+              <div class="col-sm-2">
                  <p style="color:#757575" class="footer-link">QUICK LINKS</p>
-               <a href="https://savinggroup.bnr.rw/map/" target="_blank"><p class="footer-link1">Saving Groups Map</p></a>
-                 <a class="popup-youtube" href="https://www.youtube.com/watch?v=kOK8EChDZhk"><p class="footer-link1">Demo</p></a>
-                 <a href="#!/faq"><p class="footer-link1">FAQ</p></a>
+               <a ng-href="https://savinggroup.bnr.rw/map/" target="_blank"><p class="footer-link1">Saving Groups Map</p></a>
+                 <a class="popup-youtube" ng-href="https://www.youtube.com/watch?v=kOK8EChDZhk"><p class="footer-link1">Demo</p></a>
+                 <a ng-href="#!/faq"><p class="footer-link1">FAQ</p></a>
               </div>
            </div>
            </div>
@@ -402,10 +413,10 @@
           <div id="demo2" class="collapse">
             <div class="panel-body body-style2">
               <!-- <p class="footer-link small-view"><a class="small-view" href="community.html">COMMUNITY</a></p> -->
-              <a href="#!/community#About-community"><p class="footer-link1 small-view">About</p></a>
-              <a href="#!/community#customers"><p class="footer-link1 small-view">Customers</p></a>
-              <a href="https://blog.cartix.io/" target="_blank"><p class="footer-link1 small-view">Blog</p></a>
-              <a href="#!/community#events"><p class="footer-link1 small-view">Event</p></a>
+              <a ng-href="#!/community#About-community"><p class="footer-link1 small-view">About</p></a>
+              <a ng-href="#!/community#customers"><p class="footer-link1 small-view">Customers</p></a>
+              <a ng-href="https://blog.cartix.io/" target="_blank"><p class="footer-link1 small-view">Blog</p></a>
+              <a ng-href="#!/community#events"><p class="footer-link1 small-view">Event</p></a>
             </div>
           </div>
         </div>
@@ -415,8 +426,8 @@
           <div id="demo3" class="collapse">
             <div class="panel-body body-style2">
               <!-- <p class="footer-link_ small-view">LEGAL</p> -->
-              <p  class="footer-link1"><a class="small-view" href="#!/privacy">Privacy Policy</a></p>
-              <p  class="footer-link1"><a class="small-view" href="#!/terms">Terms of Use</a></p>
+              <p  class="footer-link1"><a class="small-view" ng-href="#!/privacy">Privacy Policy</a></p>
+              <p  class="footer-link1"><a class="small-view" ng-href="#!/terms">Terms of Use</a></p>
 
             </div>
           </div>
@@ -430,10 +441,10 @@
               <a href="https://savinggroup.bnr.rw/map/" target="_blank">
                   <p class="footer-link1 small-view">Saving Groups Map</p>
               </a>
-              <a class="popup-youtube" href="https://www.youtube.com/watch?v=kOK8EChDZhk">
+              <a class="popup-youtube" ng-href="https://www.youtube.com/watch?v=kOK8EChDZhk">
                   <p class="footer-link1 small-view">Demo</p>
               </a>
-              <p class="footer-link1 small-view"><a class="small-view" href="#!/faq">FAQ</a></p>
+              <p class="footer-link1 small-view"><a class="small-view" ng-href="#!/faq">FAQ</a></p>
             </div>
           </div>
         </div>

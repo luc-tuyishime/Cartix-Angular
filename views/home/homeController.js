@@ -1,6 +1,13 @@
 cartix.controller('homeCtrl', ['$scope', '$http','$anchorScroll','$location', function($scope,$http,$anchorScroll,$location){
 
-
+  var smallScreen = false;
+      window.onresize = function(){
+      if($(window).width() < 770) {
+          smallScreen= false;
+      }else {
+          location.reload();
+         }
+      }
 
   // window.addEventListener('onorientationchange',function(){
   //   console.log('orientation change');
@@ -23,9 +30,11 @@ cartix.controller('homeCtrl', ['$scope', '$http','$anchorScroll','$location', fu
 
 
   var section1 = angular.element(document.getElementById('bottom'));
-  $scope.toSection3 = function() {
+  $scope.toSection1 = function() {
     $document.scrollToElementAnimated(section1);
   }
+
+
 
       $(document).ready(function() {
         $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
@@ -69,15 +78,7 @@ cartix.controller('homeCtrl', ['$scope', '$http','$anchorScroll','$location', fu
           //    });
           //  }
         //  window.onorientationchange = function() { location.reload() };
-     var smallScreen = false;
 
-         window.onresize = function(){
-         if($(window).width() < 770) {
-             smallScreen= false;
-         }else {
-             location.reload();
-            }
-         }
 
 
 

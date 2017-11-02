@@ -1,6 +1,13 @@
 cartix.controller('cartixCtrl', ['$scope', '$http','$anchorScroll','$location','$document', function($scope,$http,anchorScroll,$location,$document){
 
-
+  var smallScreen = false;
+      window.onresize = function(){
+      if($(window).width() < 770) {
+          smallScreen= false;
+      }else {
+          location.reload(); 
+         }
+      }
 
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments)};
@@ -60,11 +67,11 @@ cartix.controller('cartixCtrl', ['$scope', '$http','$anchorScroll','$location','
   //    });
   //  }
 
-  $scope.toTheTop = function() {
-     $document.scrollTopAnimated(0, 5000).then(function() {
-       console && console.log('You just scrolled to the top!');
-     });
-   }
+  // $scope.toTheTop = function() {
+  //    $document.scrollTopAnimated(0, 5000).then(function() {
+  //      console && console.log('You just scrolled to the top!');
+  //    });
+  //  }
 
    var section3 = angular.element(document.getElementById('support'));
    $scope.toSection3 = function() {
@@ -99,12 +106,12 @@ cartix.controller('cartixCtrl', ['$scope', '$http','$anchorScroll','$location','
               var hash = this.hash;
               // Using jQuery's animate() method to add smooth page scroll
               // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-              $('html, body').animate({
-                scrollTop: $(hash).offset().top
-              }, 900, function(){
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-              });
+              // $('html, body').animate({
+              //   scrollTop: $(hash).offset().top
+              // }, 900, function(){
+              //   // Add hash (#) to URL when done scrolling (default click behavior)
+              //   window.location.hash = hash;
+              // });
             }  // End if
           });
         }
@@ -119,13 +126,13 @@ cartix.controller('cartixCtrl', ['$scope', '$http','$anchorScroll','$location','
               var hash = this.hash;
               // Using jQuery's animate() method to add smooth page scroll
               // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-              $('html, body').animate({
-                scrollTop: $(hash).offset().top
-              }, 1000, function(){
-
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-              });
+              // $('html, body').animate({
+              //   scrollTop: $(hash).offset().top
+              // }, 1000, function(){
+              //
+              //   // Add hash (#) to URL when done scrolling (default click behavior)
+              //   window.location.hash = hash;
+              // });
             }  // End if
           });
         }

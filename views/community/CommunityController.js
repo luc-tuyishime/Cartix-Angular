@@ -1,14 +1,21 @@
-cartix.controller('communityCtrl', ['$scope', '$http','$anchorScroll','$location','$document', function($scope,$http,$anchorScroll,$location,$document){
+cartix.controller('communityCtrl', ['$scope','$http','$anchorScroll','$location','$document',function($scope,$http,$anchorScroll,$location,$document){
 
-  $scope.toTheTop = function() {
-     $document.scrollTopAnimated(0, 5000).then(function() {
-       console && console.log('You just scrolled to the top!');
-     });
-   }
+  // $scope.toTheTop = function() {
+  //    $document.scrollTopAnimated(0, 5000).then(function() {
+  //      console && console.log('You just scrolled to the top!');
+  //    });
+  //  }
 
-  var section3 = angular.element(document.getElementById('About-community'));
-  $scope.toSection3 = function() {
-    $document.scrollToElementAnimated(section3);
+  $("a.carousel-control").click(function(e){
+    e.preventDefault();
+    $(this).parent().carousel($(this).data("slide"));
+});
+
+
+
+  var section01 = angular.element(document.getElementById('About-community'));
+  $scope.toSection01 = function() {
+    $document.scrollToElementAnimated(section01);
   }
   var section4 = angular.element(document.getElementById('customers'));
   $scope.toSection4 = function() {
@@ -140,6 +147,15 @@ Ladda.bind( '.progress-demo button', {
         });
        }
      });
+
+     var smallScreen = false;
+         window.onresize = function(){
+         if($(window).width() < 770) {
+             smallScreen= false;
+         }else {
+             location.reload();
+            }
+         }
 
 
 }])
