@@ -21,7 +21,7 @@ cartix.controller('privacyCtrl', ['$scope', '$http','$anchorScroll','$location',
   });
 
   $(document).ready(function() {
-  $(this).scrollTop(0);
+  $(this).scrollTop(0); 
 // Bind normal buttons
   Ladda.bind( '.button-demo button', { timeout: 2000 } );
 

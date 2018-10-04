@@ -1,13 +1,34 @@
-cartix.controller('cartixCtrl', ['$scope', '$http','$anchorScroll','$location','$document', function($scope,$http,anchorScroll,$location,$document){
+cartix.controller('cartixCtrl', ['$scope', '$http','$anchorScroll','$location','$document', function($scope,$http,$anchorScroll,$location,$document){
+
+//   $(document).ready(function(){
+//
+//     if(document.referrer != '' &&  document.referrer != location.href ){
+//         $('.navbar').animate({
+//             scrollTop: $('#aboutcartix').offset().top - 70
+//         }, 800);
+//     }
+//
+// });
+
+
+
 
   var smallScreen = false;
       window.onresize = function(){
       if($(window).width() < 770) {
           smallScreen= false;
       }else {
-          location.reload(); 
+          location.reload();
          }
       }
+
+  //   $(function(){
+  //     $('.bg_01').css({ height: $(window).innerHeight() });
+  //     $(window).resize(function(){
+  //       $('.bg_01').css({ height: $(window).innerHeight() });
+  //     });
+  // });
+
 
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments)};
@@ -36,6 +57,7 @@ cartix.controller('cartixCtrl', ['$scope', '$http','$anchorScroll','$location','
 
 
     $(document).ready(function() {
+    $(this).scrollTop(0);
   // Bind normal buttons
     Ladda.bind( '.button-demo button', { timeout: 2000 } );
 
@@ -92,10 +114,10 @@ cartix.controller('cartixCtrl', ['$scope', '$http','$anchorScroll','$location','
           // Add scrollspy to <body>
           $('body').scrollspy({target: ".navbar", offset: 50});
           // make responsive on all screen
-         $(".bg_01").css("margin-top", $(window).height()-810);
-         //  $("").css("height", function(index){
-         //      return $(window).height();
-         //  })
+          $(".bg-01").css("padding-top", $(window).height()-800);
+          //  $(".bg_color").css("height", function(index){
+          //      return $(window).height();
+          //  })
            if ( $(window).width() > 500) {
           $(".target-scroll").on('click', function(event) {
             // Make sure this.hash has a value before overriding default behavior

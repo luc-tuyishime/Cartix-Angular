@@ -80,7 +80,7 @@ a{
     margin-top: 15rem;
 }
 .community-margin{
-  padding: 11px;
+  /*padding: 11px;*/
 }
 
 
@@ -132,11 +132,20 @@ a{
 }
 
 .comunity-img {
-    z-index: 2;
-    width: 64vh;
+    /*z-index: 2;
+    width: 64vh;*/
+
 }
 .down-arrow_2{
-  padding-bottom: 65px;
+  margin-top: 6rem;
+}
+.down-arrow_3{
+  /*margin-top: rem;*/
+  margin-bottom: 5rem;
+}
+
+.about-home{
+  /*margin-top: 10rem;*/
 }
 
 
@@ -159,7 +168,7 @@ a{
     padding-top: 10px
 }
 .cartix-padding{
-  margin-top: 5rem;
+  /*margin-top: 5rem;*/
 }
 
 .navbar {
@@ -183,14 +192,19 @@ a{
 }
 
 .comunity-img{
-    width: 515px;
+    /*width: 460px;
+    height:460px;*/
+    width: 50rem;
+
+}
+
+.down-part{
+  margin-top: -3rem;
 }
 .home-icon{
   /*width: 100%;*/
-  /*height: auto;*/
-  font: 2.50vh;
-
-
+  height: 130%;
+  /*font: 2.50vh;*/
 }
 .style-bottom{
   /*margin-bottom: 30px;*/
@@ -243,7 +257,9 @@ a{
       /*min-height:514px;*/
 }
 
-
+.cartix-padding{
+  margin-top: 3rem;
+}
 
 .navbar-inner{
   background: transparent;
@@ -407,6 +423,21 @@ a:hover {
       /*margin-top: 10rem;*/
 
     }
+    .community-margin{
+      padding: 15px;
+    }
+
+    .bg_01{
+     height: 100vh;
+    }
+    .cartix-padding{
+      /*padding-top: 250px;*/
+    }
+
+    .left,.right{
+      display: block !important;
+    }
+
     .text-event{
       padding-top: 0px !important;
     }
@@ -438,7 +469,7 @@ a:hover {
         width: 100%;
         height: auto;
         position: static;
-         z-index: 2;
+
     }
     .cartix-padding{
       /*padding-top: 70px;*/
@@ -493,7 +524,7 @@ a:hover {
 
 .down-arrow {
     width: 13.2%;
-    margin-top: 3rem;
+    margin-top: 1%;
 }
 
 .kiwi1,
@@ -829,6 +860,16 @@ a:hover {
     width:100%;
     left:0;
 }
+.btn-bot2{
+   position:absolute;
+   /*margin-left:-50px;
+   left:50%;
+   width:100px;
+   bottom:95px;*/
+   bottom: 0px;
+    width:100%;
+    left:0;
+}
 
 .bounce2{
   position: absolute;
@@ -1039,6 +1080,10 @@ a {
     .footer-hide {
         display: none
     }
+    .down-arrow_3,
+    .footer-hide {
+        display: none
+    }
     .justify-centered{
       margin: 0 auto;
       text-align: justify;
@@ -1062,6 +1107,9 @@ a {
     .footer-hide,
     .location {
         display: none
+    }
+    ..down-arrow_3{
+      display: none;
     }
     .bottom_footer {
         margin-top: 15px
@@ -1139,10 +1187,10 @@ a {
   left: 0;
 }
 .mainContentDiv{
-  /*position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
-  left: 0;*/
+  left: 0;
 }
 
 .navbar,.navvv{
@@ -1239,13 +1287,22 @@ a {
     font-family: 'Glyphicons Halflings';
     src: url(../font/glyphicons-halflings-regular.ttf)
 }
+/*html, body {height:100%;}
+body {margin:0;padding:0;}*/
 
 .bg_color {
     background-color: #fafafa;
     color: #fff;
-    padding-top: 50px;
-    padding-bottom: 50px
+
 }
+/*#aboutcartix{
+ position:relative;
+ top:0;
+ left:0;
+ height:100%;
+ width:100%;
+}*/
+
 
 .bg_3 {
     background-color: #560034;
@@ -1292,8 +1349,12 @@ a {
 .bottom-style {
     padding-top: 120px;
     padding-bottom: 80px;
-    display: inline-table;
-    float: none
+
+}
+
+.im-centered{
+  display: block;
+  margin:0 auto;
 }
 
 .text-price {
@@ -1302,7 +1363,7 @@ a {
 
 .panel-bottom {
     margin-bottom: 95px;
-    box-shadow: -15px 15px 50px 2px #d3d3d3
+    box-shadow: 0 6px 20px 0 #d3d3d3 ;
 }
 
 .basic-style,
@@ -1374,6 +1435,9 @@ a {
 #About {
     padding-bottom: 20px
 }
+#aboutcartix{
+    padding-bottom: 20px
+}
 
 .footer-link:hover {
     color: #757575
@@ -1386,6 +1450,9 @@ a {
 
 .bg-001 {
     background-color: #87ad5d;
+    padding-top: 1px;
+    /*padding-bottom: 70px;*/
+    height: 100%;
 
 }
 
@@ -1393,7 +1460,7 @@ a {
   background-color: #87ad5d !important;
   border-bottom: none;
   box-shadow: none;
-  z-index: 1;
+  padding-bottom: 5px;
 }
 
 .navvv {
@@ -1420,11 +1487,12 @@ a {
     text-align: center
 }
 .community-text_{
-  padding-top: 30px;
+  /*padding-top: 30px;
   position: relative;
   top: 0;
   right: 0;
-  left: 0;
+  left: 0;*/
+  margin-top:4rem;
 }
 
 .blog,
@@ -1443,7 +1511,151 @@ a {
 }
 
 #events {
-    padding-top: 90px
+    padding-top: 40px
+}
+
+
+#myImg {
+    /*border-radius: 5px;*/
+    /*cursor: pointer;
+    transition: 0.3s;*/
+}
+#myImg2 {
+    /*border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;*/
+}
+#myImg3 {
+    /*border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;*/
+}
+#myImg4 {
+    /*border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;*/
+}
+#myImg5 {
+    /*border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;*/
+}
+
+
+/* The Modal (background) */
+.modal-event {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 130px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    border:none !important;
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    border:none !important;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close-event {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 34px;
+    font-weight: bold;
+    transition: 0.3s;
+    padding-top: 63px;
+}
+
+.close-event:hover,
+.close-event:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*.close-event2 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close-event2:hover,
+.close-event2:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}*/
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+    .modal-content2 {
+        width: 100%;
+    }
+    #myImg-main {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    #myImg-main:hover {
+      opacity: 0.7;
+    }
+    #myImg:hover {opacity: 0.7;}
+    #myImg2:hover {opacity: 0.7;}
+    #myImg3:hover {opacity: 0.7;}
+    #myImg4:hover {opacity: 0.7;}
+    #myImg5:hover {opacity: 0.7;}
+
+
 }
 
 .landing-col {
@@ -1477,6 +1689,7 @@ a {
     -o-background-size: cover;
     background-size: cover
 }
+
 
 #about {
     background-color: #F6F1F4
@@ -1851,8 +2064,8 @@ main {
 }
 
 .community-div{
-  /*position: relative;
-  bottom: 35px;*/
+  position: relative;
+  bottom: 30px;
 }
 
 .support-img{
@@ -1896,16 +2109,16 @@ main {
 }
 
 /*Land scape style*/
-/*@media screen and (min-width:320px) and (max-width:767px) and (orientation:landscape) {
+@media screen and (min-width:320px) and (max-width:767px) and (orientation:landscape) {
+  .left,.right{
+    display: block !important;
+  }
 
-body{
-  visibility:hidden;
-}
-
-#landscape{
-  visibility: visible!important;
+   .hide-event{
+     display: none;
    }
-}*/
+
+}
 
 
 @media screen and (min-width:768px) and (max-width:1024px) and (orientation:landscape){
@@ -2240,10 +2453,12 @@ p {
 }
 
 .carousel-control.left {
-    margin-left: -45px;
+    margin-left: -32px;
+    margin-bottom: 35px;
 }
 .carousel-control.right {
-    margin-right: -45px;
+    margin-right: -32px;
+    margin-bottom: 35px;
 }
 .carousel-control {
     width: 0%;
@@ -2261,9 +2476,20 @@ p {
 }
 
 #myCarousel {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 35px;
+    margin-right: 35px;
 }
+
+/*.carousel .left >
+.carousel .right >  {
+  position: absolute;
+  left: 20px;
+  bottom: 25%;
+  transform: translateY(-50%);
+}*/
+
+
+
 .item img {
     margin-left: auto;
     margin-right: auto;
@@ -2278,4 +2504,16 @@ p {
 }
 .carroussel-padding{
   padding-bottom: 30px;
+}
+
+@media (max-width: 900px) {
+
+  [class*="col-"] {
+      margin-bottom: 15px;
+  }
+
+}
+
+.left,.right{
+  display: none;
 }

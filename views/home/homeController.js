@@ -1,5 +1,7 @@
 cartix.controller('homeCtrl', ['$scope', '$http','$anchorScroll','$location', function($scope,$http,$anchorScroll,$location){
 
+
+
   var smallScreen = false;
       window.onresize = function(){
       if($(window).width() < 770) {
